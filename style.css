@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(Images/pexels-serkan-bayraktar-8123680.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#container {
+    backdrop-filter: blur(20px);
+    transform: scale(0);
+}
+
+#container #icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #c37a12;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#container.active-popup {
+    transform: scale(1);
+}
+
+#container .btn {
+    transition: transform .5s ease;
+    transform: translateX(0);
+}
+
+
+
+#firstDiv {
+    background: url("images/pexels-karolina-grabowska-4386341.jpg");
+    background-size: cover;
+    height: 80vh;
+    filter: brightness(.3);
+}
+
+button {
+    background-color: #c37a12 !important;
+    color: #ffffff !important;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.js">
+</head>
+
+<body>
+    <nav>
+        <ul class="d-flex justify-content-evenly mt-3">
+            <button class="btn btn-outline-secondary">Home</button>
+            <a class="btn btn-success" id="btnlogin-popup">Start Purchase</a>
+        </ul>
+    </nav>
+    <div class="container shadow-lg rounded-5" id="container">
+        <span id="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <h3 class="text-center text-decoration-underline my-2">Budget Plan</h3>
+        <div class="row">
+            <div class="col-lg-5 col-12 rounded-4" id="firstDiv">
+            </div>
+            <div class="col-lg-5 col-12 mx-auto mt-lg-0 mt-3">
+                <div class="row" id="row">
+                    <div class="alert alert-danger p-2 text-center" style="display: none;" id="err">Fill Up All Spaces
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control form-control-sm my-3" placeholder="Enter Your Name"
+                            required id="personName" autofocus>
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Add to cart"
+                            required id="first" maxlength="3">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Add to cart"
+                            required id="second">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Add to cart"
+                            required id="third">
+                    </div>
+                    <div class="col-6">
+                        <input type="date" class="form-control form-control-sm my-3" placeholder="Enter Today's Date"
+                            required id="todayDate">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Add to cart"
+                            required id="fourth">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Add to cart"
+                            required id="fifth">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Add to cart"
+                            required id="sixth">
+                    </div>
+                    <button class="my-2 btn btn-sm" onclick="sum()">Purchase</button>
+                    <div class="my-3 p-2">
+                        <p class="showDiv" id="intro"></p>
+                        <p class="showDiv" id="note"></p>
+                        <p class="showDiv" id="result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
